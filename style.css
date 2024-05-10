@@ -2,17 +2,20 @@
     padding: 0;
     margin: 0;
 }
-.mid-width{
-    width: 1200px;
-    margin: auto;
-    display: flex;
+.clearfix::before{
+    content: "";
+    display: block;
+    clear: both;
+}
+.right{
+    float: right;
 }
 header{
     background-color: #141719;
     width: 100%;
 }
 .container{
-    width: 60%;
+    width: 80%;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -46,16 +49,15 @@ header{
 }
 
 /* Main */
-.wrapper{
-    display: flex;
-    flex-direction: column;
-    position: relative;
+.main-content{
+    margin-top: 10px;
+    box-sizing: border-box;
 }
 /* First-Row */
 .first-row{
     display: flex;
-    flex-wrap: wrap;
     padding: 50px 0;
+    justify-content: space-between;
 }
 .box1, .box11, .box111{
     width: 300px;
@@ -63,38 +65,33 @@ header{
     border: 1px solid green;
     margin-right: 20px;
 }
-.box1 span{
+.first-row span{
     background-color: red;
-    font-size: 20px;
-    padding: 0px 10px;
-    border: 1px solid aqua;
+    font-size: 18px;
+    color: #fff;
+    padding: 20px 10px 20px 0;
+    display: inline-block;
+}
+.box{
+    justify-content: flex-start;
     align-items: flex-start;
 }
-.box11 span{
-    background-color: red;
-    font-size: 20px;
-    padding: 0px 10px;
-    border: 1px solid aqua;
+.box-2{
+    display: flex;
     justify-content: center;
     align-items: center;
 }
-.box111 span{
-    background-color: red;
-    font-size: 20px;
-    padding: 0px 10px;
-    border: 1px solid aqua;
-    justify-content: flex-end;
-    align-items: flex-end;
-}
-.box111{
-    justify-content: flex-end;
+.box-3{
+    display: flex;
+    flex-direction: row-reverse;
     align-items: flex-end;
 }
 /* Second-Row */
 .second-row{
     display: flex;
+    justify-content: space-between;
 }
-.box2, .box22, .box222{
+.second1, .second2{
     width: 300px;
     height: 150px;
     padding: 10px;
@@ -102,13 +99,17 @@ header{
     border: 1px solid red;
     margin-right: 20px;
 }
-.box22{
-    
-}
 /* Third-Row */
 .third-row{
     display: flex;
     padding: 50px 0;
+}
+.flex-btn{
+    background-color: red;
+    color: #fff;
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid green;
 }
 .box3, .box33, .box333{
     width: 300px;
@@ -116,57 +117,85 @@ header{
     border: 1px solid aqua;
     margin-right: 20px;
 }
-.box3 span{
-    background-color: red;
-    font-size: 20px;
-    padding: 0px 10px;
-    border: 1px solid aqua;
-    align-items:flex-start ;   
+.box3{
+    display: flex;
+    padding: 30px 20px;
     justify-content: space-between;
-}
-.box33 span{
-    background-color: red;
-    font-size: 20px;
-    padding: 0px 10px;
-    border: 1px solid aqua;
-    flex-wrap: wrap;
-    align-content:flex-start;
-}
-.box333 span{
-    border: 1px solid aqua;
-}
-.box333 .left{
-    background-color: red;
-    font-size: 20px;
-    display: inline-block;
     align-items: flex-start;
 }
-.box333 .center{
-    background-color: red;
-    font-size: 20px;
-    display: inline-block;
-    align-items: center;
+.box33{
+    padding: 30px 35px;
+    align-content: flex-start;
+    flex-wrap: wrap;
 }
-.box333 .right{
+.box333{
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+}
+.flex3-btn{
     background-color: red;
-    font-size: 20px;
-    display: inline-block;
-    align-items: flex-end;
+    color: #fff;
+    display: flex;
+    padding: 10px;
+    display: block;
+    border: 1px solid green;
+}
+.flex-item1{
+    align-self: flex-start;
+}
+.flex-item2{
+    align-self: center;
+}
+.flex-item3{
+    align-self: flex-end;
 }
 /* Articale */
 .sidebar{
     background-color: #d2d2d2;
-    width: 230px;
+    padding: 0px 20px;
     border-left: 2px solid red;
-    position: absolute;
-    right: 0;
-    height: 100%;
-    padding: 10px 15px;
-    margin-top: 20px;
-    margin-right: -30px;
 }
 .sidebar img{
     width: 200px;
+}
+/* Footer */
+footer{
+    margin-bottom: 50px;
+    padding: 20px 0px 20px 0px;
+    background-color: #141719;
+}
+.footer{
+    margin-left: 35%;
+    width: 500px;
+}
+.footer-menu{
+    align-self: center; 
+}
+.footer-menu ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+
+}
+.footer-menu ul li a {
+    color: #d2d2d2;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 45px;
+    position: relative;
+}
+.footer-menu ul li a::after {
+    content: '';
+    position: absolute;
+    background-color: #d2d2d2;
+    bottom: -10px;
+    left: -8px;
+    width: 130%;
+    height: 2px;
+}
+.footer-menu ul li a:hover{
+    color: #ffcc00;
 }
 
 
