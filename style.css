@@ -2,20 +2,12 @@
     padding: 0;
     margin: 0;
 }
-.clearfix::before{
-    content: "";
-    display: block;
-    clear: both;
-}
-.right{
-    float: right;
-}
 header{
     background-color: #141719;
     width: 100%;
 }
 .container{
-    width: 80%;
+    width: 70%;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -49,90 +41,82 @@ header{
 }
 
 /* Main */
+.wrapper{
+    display: flex;
+}
 .main-content{
-    margin-top: 10px;
-    box-sizing: border-box;
+    width: 80%;
 }
 /* First-Row */
 .first-row{
     display: flex;
-    padding: 50px 0;
-    justify-content: space-between;
-}
-.box1, .box11, .box111{
-    width: 300px;
-    height: 200px;
-    border: 1px solid green;
-    margin-right: 20px;
+    height: 50vh;
 }
 .first-row span{
     background-color: red;
-    font-size: 18px;
-    color: #fff;
-    padding: 20px 10px 20px 0;
-    display: inline-block;
+    padding: 15px;
 }
 .box{
-    justify-content: flex-start;
-    align-items: flex-start;
-}
-.box-2{
+    width: 300px;
+    height: 200px;
+    border: 1px solid red;
     display: flex;
+    margin: 20px;
+}
+.box1st{
+   justify-content: flex-start;
+   align-items: start;
+}
+.box2nd{
     justify-content: center;
     align-items: center;
 }
-.box-3{
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: flex-end;
+.box3rd{
+    justify-content: flex-end;
+    align-items: end;
 }
+
 /* Second-Row */
 .second-row{
     display: flex;
-    justify-content: space-between;
 }
-.second1, .second2{
-    width: 300px;
-    height: 150px;
-    padding: 10px;
-    box-sizing: border-box;
-    border: 1px solid red;
-    margin-right: 20px;
+.second-row span{
+    padding: 20px;
 }
+.second2nd{
+    flex-grow: 1;
+}
+
 /* Third-Row */
 .third-row{
     display: flex;
-    padding: 50px 0;
+}
+.box1{
+    width: 300px;
+    height: 150px;
+    border: 1px solid red;
+    display: flex;
+    margin: 20px;
+    justify-content: space-around;
 }
 .flex-btn{
+    margin-top: 40px;
+}
+.flex-btn span{
     background-color: red;
     color: #fff;
-    display: inline-block;
     padding: 10px;
     border: 1px solid green;
 }
-.box3, .box33, .box333{
+.box2{
     width: 300px;
     height: 150px;
-    border: 1px solid aqua;
-    margin-right: 20px;
-}
-.box3{
+    border: 1px solid red;
     display: flex;
-    padding: 30px 20px;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-.box33{
-    padding: 30px 35px;
-    align-content: flex-start;
+    margin: 20px;
     flex-wrap: wrap;
 }
-.box333{
-    display: flex;
-    padding: 30px;
-    justify-content: space-between;
-}
+
 .flex3-btn{
     background-color: red;
     color: #fff;
@@ -140,6 +124,15 @@ header{
     padding: 10px;
     display: block;
     border: 1px solid green;
+}
+
+.box3{
+    width: 300px;
+    height: 150px;
+    border: 1px solid red;
+    display: flex;
+    margin: 20px;
+    padding: 10px;
 }
 .flex-item1{
     align-self: flex-start;
@@ -150,11 +143,15 @@ header{
 .flex-item3{
     align-self: flex-end;
 }
-/* Articale */
+/* Sidebar */
 .sidebar{
     background-color: #d2d2d2;
     padding: 0px 20px;
     border-left: 2px solid red;
+    margin: 10px 0;
+}
+.sidebar h3{
+    padding: 10px 0;
 }
 .sidebar img{
     width: 200px;
