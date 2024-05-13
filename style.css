@@ -6,7 +6,7 @@ header{
     background-color: #141719;
     width: 100%;
 }
-.container{
+.contaner{
     width: 70%;
     margin: auto;
     display: flex;
@@ -41,114 +41,151 @@ header{
 }
 
 /* Main */
-.wrapper{
-    display: flex;
-}
-.main-content{
-    width: 80%;
-}
-/* First-Row */
-.first-row{
-    display: flex;
-    height: 50vh;
-}
-.first-row span{
-    background-color: red;
-    padding: 15px;
-}
-.box{
-    width: 300px;
-    height: 200px;
-    border: 1px solid red;
-    display: flex;
+.container{
     margin: 20px;
+    display: flex;
+  }
+/* Top-Row */
+.top-row{
+    display: flex;
 }
-.box1st{
-   justify-content: flex-start;
-   align-items: start;
+.top-row span{
+    background-color: red;
+    color: #fff;
+    padding: 10px;
 }
-.box2nd{
+.card-01{
+    flex: 1;
+    max-width: 300px;
+    height: 200px;
+    margin: 10px;
+    border: 1px solid green;
+    display: flex;
+    align-items: flex-start;
+}
+.card-011{
+    flex: 1;
+    max-width: 300px;
+    height: 200px;
+    margin: 10px;
+    border: 1px solid green;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
-.box3rd{
+.card-0111{
+    flex: 1;
+    max-width: 300px;
+    height: 200px;
+    margin: 10px;
+    border: 1px solid green;
+    display: flex;
     justify-content: flex-end;
-    align-items: end;
+    align-items: flex-end;
 }
 
-/* Second-Row */
-.second-row{
+/* Middle-Row */
+.middle-row{
     display: flex;
 }
-.second-row span{
+.middle-row P{
     padding: 20px;
 }
-.second2nd{
+.card-02{
+    flex: 1;
+    width: 300px;
+    height: 150px;
+    margin: 10px;
+    border: 1px solid red;
+    display: flex;
+}
+.card-022{
+    flex: 1;
+    width: 300px;
+    height: 150px;
+    margin: 10px;
+    border: 1px solid red;
+    display: flex;
     flex-grow: 1;
 }
-
-/* Third-Row */
-.third-row{
+.card-0222{
+    flex: 1;
+    width: 300px;
+    height: 150px;
+    margin: 10px;
+    border: 1px solid red;
     display: flex;
+}
+/* Last-Row */
+.last-row{
+    display: flex;
+}
+.last-row span{
+    background-color: red;
+    border: 1px solid green;
+    padding: 10px;
+    color: #fff;
+}
+.card-03{
+    position: relative;
+    width: 300px;
+    height: 150px;
+    margin: 10px;
+    border: 1px solid red;
+    justify-content: space-around;
 }
 .box1{
     width: 300px;
     height: 150px;
     border: 1px solid red;
     display: flex;
-    margin: 20px;
+    margin: 10px;
     justify-content: space-around;
 }
 .flex-btn{
-    margin-top: 40px;
+    margin-top: 25px;
 }
-.flex-btn span{
-    background-color: red;
-    color: #fff;
-    padding: 10px;
-    border: 1px solid green;
-}
-.box2{
+.card-033{
     width: 300px;
     height: 150px;
+    margin: 10px;
     border: 1px solid red;
     display: flex;
-    margin: 20px;
     flex-wrap: wrap;
 }
 
-.flex3-btn{
-    background-color: red;
-    color: #fff;
-    display: flex;
-    padding: 10px;
-    display: block;
-    border: 1px solid green;
-}
-
-.box3{
+.card-0333{
     width: 300px;
     height: 150px;
+    margin: 10px;
     border: 1px solid red;
     display: flex;
-    margin: 20px;
+}
+.card-box333{
+    display: flex;
     padding: 10px;
+    justify-content: space-between;
 }
-.flex-item1{
-    align-self: flex-start;
+.card-box333 > div{
+    display: flex;
 }
-.flex-item2{
-    align-self: center;
+.card1st{
+    justify-content: start;
+    align-items: start;
 }
-.flex-item3{
-    align-self: flex-end;
+.card2nd{
+    justify-content: center;
+    align-items: center;
 }
-/* Sidebar */
+.card3rd{
+    display: flex;
+    align-items: flex-end;
+}
+
 .sidebar{
     background-color: #d2d2d2;
-    padding: 0px 20px;
+    padding: 0px 15px;
     border-left: 2px solid red;
-    margin: 10px 0;
 }
 .sidebar h3{
     padding: 10px 0;
@@ -156,6 +193,7 @@ header{
 .sidebar img{
     width: 200px;
 }
+
 /* Footer */
 footer{
     margin-bottom: 50px;
@@ -163,26 +201,25 @@ footer{
     background-color: #141719;
 }
 .footer{
-    margin-left: 35%;
     width: 500px;
+    margin: auto;
 }
 .footer-menu{
-    align-self: center; 
+    padding-bottom: 12px;
 }
-.footer-menu ul {
+.footer-menu ul{
     display: flex;
     list-style: none;
     justify-content: space-evenly;
-
 }
-.footer-menu ul li a {
+.footer-menu ul li a{
     color: #d2d2d2;
     text-decoration: none;
     font-size: 18px;
     line-height: 45px;
     position: relative;
 }
-.footer-menu ul li a::after {
+.footer-menu ul li a::after{
     content: '';
     position: absolute;
     background-color: #d2d2d2;
@@ -194,5 +231,3 @@ footer{
 .footer-menu ul li a:hover{
     color: #ffcc00;
 }
-
-
